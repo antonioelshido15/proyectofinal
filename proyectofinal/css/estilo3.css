@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url(/font/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PT Sans", sans-serif;
+    src: url(/font/PTSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(/font/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*------ Barra de Navegacion ------*/
+nav{
+
+    background-color: #004178;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav a{
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover{
+    background: #005baa;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #004178;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+/*----- CARRUSEL ------*/
+
+
+
+/*---- CONTENIDO ----*/
+#caja {
+    background-color: rgba(0, 0, 0, 0.719);
+    display: inline-block;
+    position: relative;
+    top: 45%;
+    left: 5%;
+    padding: 10px;
+}
+
+#caja h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.grid-layout {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.caja {
+    margin: 15px;
+    padding: 10px;
+}
+
+.caja img {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+}
+
+.caja h3 {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+/*----- FOOTER -----*/
+footer {
+    margin-top: 20px;
+}
+.paletas{
+    border-top: 2px solid black;
+}
+.paletas img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*----- @MEDIA -----*/
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 800px){
+    .sidebar{
+        width: 100%
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 30% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .paletas img {
+        width: 80%; /* Ajusta el tamaño según sea necesario para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .paletas img {
+        width: 60%; /* Ajusta el tamaño según sea necesario para pantallas aún más pequeñas */
+    }
+}

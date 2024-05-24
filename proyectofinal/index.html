@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>TechHistory</title>
+</head>
+<body>
+
+    <!---- Barra de navegación ---->
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill="white"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="empresas.html">Empresas Importantes</a></li>
+            <li><a href="figuras.html">Figuras Historicas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Tech History</a></li>
+            <li class="hideOnMobile"><a href="index.html">Inicio</a></li>
+            <li class="hideOnMobile"><a href="historia.html">Historia</a></li>
+            <li class="hideOnMobile"><a href="empresas.html">Empresas Importantes</a></li>
+            <li class="hideOnMobile"><a href="figuras.html">Figuras Historicas</a></li>
+            <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill="white"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+    
+
+    <!---- HEADER ---->
+    <header class="header">
+        <h1 style="font-size: 72px; font-family: 'Roboto' sans-serif;">Tech History</h1>
+    </header>
+
+
+    <!-- Contenido -->
+    
+
+    <div class="subtitulo">
+        <h2>¡Bienvenido al viaje a través del tiempo de la historia de la tecnología!</h2>
+    </div>
+
+
+    <div class="container">
+        <h2>Introducción</h2>
+        <div class="image-wrapper"><img src="img/vr.jpg" alt=""></div>
+        <p>La historia de la tecnología es un relato fascinante que se remonta a los albores de la humanidad. Desde las primeras herramientas de piedra tallada hasta los sofisticados dispositivos electrónicos de hoy en día, los avances tecnológicos han transformado nuestra forma de vivir, trabajar y comunicarnos.</p>
+        <p>En este sitio web, te embarcarás en un recorrido cronológico por las distintas eras de la innovación, explorando los hitos clave que han dado forma a nuestro mundo. Descubrirás cómo los inventos y descubrimientos han impulsado el progreso humano, desde la Revolución Industrial hasta la Era Digital.</p>
+        <p>A lo largo del camino, conocerás a las mentes brillantes detrás de estas innovaciones, comprenderás el impacto social y cultural de la tecnología y reflexionarás sobre el futuro que nos depara.</p>
+    </div>
+
+    <div class="subtitulo">
+        <h2>¿Quieres saber más?</h2>
+    </div>
+
+
+    <div class="card-container">
+        
+        <div class="card">
+            <img src="img/historia-de-la-computadora-eniac-e1558287206494.jpg" alt="">
+            <div class="card-content">
+                <h3>Historia</h3>
+                <p>Desde la piedra tallada hasta la inteligencia artificial, la historia de la tecnología es un relato fascinante de cómo la inventiva humana ha transformado nuestro mundo.</p>
+                <a href="historia.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/oracle.jpg" alt="">
+            <div class="card-content">
+                <h3>Empresas Importantes</h3>
+                <p>Conoce las empresas que hicieron de la tecnología lo que es hoy</p>
+                <a href="empresas.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/mujereshistoriatecnologia.jpg" alt="">
+            <div class="card-content">
+                <h3>Figuras Historicas</h3>
+                <p>Todas esas personas que promovieron </p>
+                <a href="figuras.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+    </div>
+    
+    
+
+    <!-- FOOTER -->
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #004178; color: white;">
+            © 2024 Copyright: antomustang
+        </div>
+        <div class="paletas">
+            <img src="img/paleta.png" alt="">
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+</html>
