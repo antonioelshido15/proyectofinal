@@ -109,7 +109,7 @@ nav li:first-child{
     margin-top: 80px;
 } 
 
-/*----- CARTA DE PRESENTACION -----*/
+/*----- CARTA DE PRESENTACION 
 
 .card-container{
     display: flex;
@@ -171,6 +171,69 @@ p {
 
 .btn:hover {
     background-color: #2a4276;
+} -----*/
+
+.tag-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+}
+.tag-container h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.tag-container img {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.qr-code {
+    margin-top: 20px;
+}
+.qr-code img {
+    max-width: 100%;
+    height: auto;
+}
+.corner-image-left {
+    position: absolute;
+    top: -150%; /* Ajusta según tu preferencia */
+    left: 10px; /* Ajusta según tu preferencia */
+    width: 50px; /* Ajusta según tu preferencia */
+    height: auto;
+}
+
+.corner-image-right {
+    position: absolute;
+    top: -150%; /* Ajusta según tu preferencia */
+    left: 80%; /* Ajusta según tu preferencia */
+    width: 50px; /* Ajusta según tu preferencia */
+    height: auto;
+}
+.tag-container p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.social-button {
+    display: inline-block;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.social-button:hover {
+    background-color: #0056b3;
 }
 
 /*----- FORMULARIO -----*/
